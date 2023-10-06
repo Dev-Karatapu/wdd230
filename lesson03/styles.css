@@ -1,0 +1,71 @@
+body, h1, h2, #p, #scenarios, #site-purpose, #color-schema, #typography, #wireframe {
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #336699;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the site name */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+}
+
+/* Style the site purpose section */
+#site-purpose {
+    padding: 20px;
+}
+
+/* Style the scenarios section */
+#scenarios {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Style the color schema section */
+#color-schema {
+    padding: 20px;
+}
+
+/* Style color samples */
+.color-sample {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#primary-color {
+    background-color: #336699;
+}
+
+#secondary-color {
+    background-color: #FF9900;
+}
+
+/* Style the typography section */
+#typography {
+    padding: 20px;
+}
+
+/* Style fonts */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Style the wireframe section */
+#wireframe {
+    padding: 20px;
+}
