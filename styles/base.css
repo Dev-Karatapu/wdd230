@@ -38,6 +38,7 @@ section.card {
 
 h1 {
     font-size: larger;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 h2 {
@@ -59,14 +60,23 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 20px;
+	/* background: linear-gradient(to bottom, rgb(138, 135, 135), rgb(34, 34, 39)); */
     background-color: rgb(28, 67, 125);
     color: white;
+}
+
+.chamber-box {
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
 header img {
     max-width: 100px;
     border-radius: 5%;
+    border: 2vh 3vh solid rgb(red, green, blue);
     text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 footer {
