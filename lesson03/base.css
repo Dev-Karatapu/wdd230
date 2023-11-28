@@ -62,7 +62,18 @@ img{
     justify-content: center;
 }
 
-
+/* Container for the cards */
+.card-container {
+    display: flex;
+    gap: 20px; /* Adjust spacing between cards */
+  }
+  
+  /* Style for each card */
+  .card {
+    flex: 1; /* Each card takes equal space */
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
 
 .container {
     display: flex;
@@ -110,7 +121,7 @@ img{
     background-color: antiquewhite;
     width:  400px;
     height: 200px;
-    margin: 1px
+    margin: 1px;
     border-radius: 15px;
 }
 
@@ -159,3 +170,75 @@ footer {
 }
 
 
+
+/* For tablets */
+@media screen and (max-width: 768px) {
+    /* Adjust header elements */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Adjust card layout */
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* Adjust footer */
+    footer {
+        text-align: center;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    /* Adjust header elements */
+    header {
+        padding: 10px;
+    }
+    .logo {
+        max-width: 80px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #f9f9f9;
+        z-index: 1;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+    nav ul.show {
+        display: block;
+    }
+    .btn {
+        display: block;
+        margin: 20px auto;
+    }
+    /* Adjust card layout */
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* Adjust footer */
+    footer {
+        text-align: center;
+        font-size: 12px;
+    }
+}
