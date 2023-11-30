@@ -3,6 +3,8 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
+//test
+
 // Add a click event listener to the button
 button.addEventListener('click', function() {
     if (input.value !== '') {
