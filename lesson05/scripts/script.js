@@ -3,11 +3,12 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-//test
-
 // Add a click event listener to the button
 button.addEventListener('click', function() {
-    if (input.value !== '') {
+    if (input.value === '') {
+        alert("Please enter a Chapter name");
+    }  
+        else {
         // Create a new list item and a delete button
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
