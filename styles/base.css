@@ -74,7 +74,7 @@ header {
 header img {
     max-width: 100px;
     border-radius: 5%;
-    border: 2vh 3vh solid rgb(red, green, blue);
+    border: 2vh 3vh solid rgb(rgba(255, 0, 0, 0.897), rgb(0, 128, 0), rgb(0, 0, 255));
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
@@ -166,19 +166,3 @@ nav {
 	}
 }
 
-/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
-@media only screen and (min-width: 40em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	#menu {
-		display: none;
-	}
-}
