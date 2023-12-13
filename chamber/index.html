@@ -1,88 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dev Karatapu">
+    <meta name="description"
+        content="Chamber of Commerce">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chamber of Commerce</title>
-
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normal.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    
+    
 </head>
+
+
 <body>
-
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Chamber logo">
-        </a>
+        <div id="logo">
+            <img class="header-logo" id="img-header" src="images/logo.png" alt="Logo">
+        </div>
 
-        <nav>
-            
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
-        <a href="https://www.facebook.com/samson.dev/" target="_blank">
-            <img src="images/facebook.png" class="img-fluid" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/samsondev/" target="_blank">
-            <img src="images/instagram.png" class="img-fluid" alt="Instagram">
+        <div id="mode">
+            <em> Dark-Mode</em>🕶️
+        </div>
+        <a class= "facebook" href="https://www.facebook.com/samson.dev/" target="_blank">
+            <img src="images/facebook.png" class="img-fluid" alt="Facebook"></a>
+            <a class="instagram" href="https://www.instagram.com/samsondev/" target="_blank">
+        <img src="images/instagram.png" class="img-fluid" alt="Instagram">
         </a>
     </header>
-    
-    <div class="container">
-            <img id="chamber-img" src="images/chamber.png" alt="chamber image">
-            <button class="btn"> Join the Chamber</button>    
-    </div>
-    
-    
-    <div class="section">
-        <div class="card-container">
-            <div class="card">
-                <div class="card-img">
-                    <h2>Events</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    <nav id="nav-menu">
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="directory.html" title="Directory">Directory</a></li>
+            <li><a href="join.html" title="Join">Join</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <main id="main-index">
+        <!-- <div id="announcementBanner" class="announcement-banner">
+            <div>
+                <strong>Announcement:</strong> Don't miss our new year sale on January 1, 2024!
+            </div>
+            <button class="close-button" onclick="closeBanner()">Close</button>
+        </div> -->
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/hero-img-small1.webp">
+                <source media="(max-width: 60em)" srcset="images/hero-img-medium1.webp">
+                <img id="hero-image" src="images/chamber.png" alt="large hero image" loading="lazy">
+            </picture>
+            <h1 class="hero-text">Welcome to the Chamber of Commerce</h1>
+            <div class="call-to-action">
+                <button onclick="redirect()" class="cta-button">Join Us Today</button>
+            </div>
+        </div>
+        <section id="current-events">
+            <img src="images/1.png" alt="event icon" id="event-icon">
+            <h2>Upcoming Event:</h2>
+            <h4><strong>Event Title: </strong>New Year sale</h4>
+            <p><strong>Date and Time: </strong> January 1, 2024, 12:00 AM - 23:59 PM</p>
+            <p><strong>Location: </strong>Our Website</p>
+            <p>Join us to celebrate New Year with our sale on Chamber of Commerce page.</p>
+        </section>
+
+        <section id="weather-card">
+            <h2> Weather Information</h2>
+            <h4>Rexburg, Idaho</h4>
+            <div class="weather">
+                <h4>Today</h4>
+                <h4><span id="current-temp"></span> </h4>
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <figcaption id="fig1" class="weather-fig-captions"></figcaption>
+                    </figure>
+            </div>
+            <h4>Forecast 3 days</h4>
+            <section class="weather" id="weather-forecast">
+                <div>
+                    <h4><span id="forecast-day-1"></span> </h4>
+                    <h4><span id="forecast-temp-1"></span> </h4>
+                    <figure>
+                        <img id="weather-icon1" src="" class="w-icon" alt="weather icon">
+                        <figcaption id="fig2" class="weather-fig-captions"></figcaption>
+                    </figure>
                 </div>
-            </div>
-        
-            <div class="card">
-                <div class="card-img">
-                    <h2>Weather</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <div>
+                    <h4><span id="forecast-day-2"></span> </h4>
+                    <h4><span id="forecast-temp-2"></span> </h4>
+                    <figure>
+                        <img id="weather-icon2" src="" class="w-icon" alt="Weather Icon">
+                        <figcaption id="fig3" class="weather-fig-captions"></figcaption>
+                    </figure>
                 </div>
-            </div>
-        </div>        
-    </div>
-    
+                <div>
+                    <h4><span id="forecast-day-3"></span> </h4>
+                    <h4><span id="forecast-temp-3"></span> </h4>
+                    <figure>
+                        <img id="weather-icon3" src="" class="w-icon" alt="Weather Icon">
+                        <figcaption id="fig4" class="weather-fig-captions"></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </section>
+        <section id="company-spotlight1" class="spotlight">
+            <img src="images/1.png" loading="lazy" alt="Air Tags">
+            <h2>Air Tags</h2>
+            <p>Keep track of your stuffs and people</p>
+            <p>GPS Traker, find your stuffs.</p>
+            <p>Long lasting Battaries</p>
+        </section>
+        <section id="company-spotlight2" class="spotlight">
+            <img src="images/2.png" loading="lazy" alt="Airpods">
+            <h2>Airpods</h2>
+            <p>Hear the best of all</p>
+            <p>Music, call and more non-stop</p>
+        </section>
+        <section id="company-spotlight3" class="spotlight">
+            <img src="images/3.png" loading="lazy" alt="Apple Watch">
+            <h2>Apple Watch</h2>
+            <p>Track Health, more Features</p>
+            <p>Best wrist watch to have in the 21 century</p>
 
-    <section class="container">
-        <div class="card">
-            <div class="card-img car-1">
-                <h2>Title</h2>
-                <p>lasjflasdf</p>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="card-img car-2">
-                <h2>Title</h2>
-                <p>lasjflasdf</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-img car-3">
-                <h2>Title</h2>
-                <p>lasjflasdf</p>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
-        <img id="chamber-img" src="images/Chamber logo.png" alt="chamber logo">
-        <p>&copy; 2023 Your Chamber of Commerce</p>
-        <P>Dave Karatapu test 1</P>
+        <div id="contact-info">
+            <img id="footer-img" src="images/Chamber-logo.png" loading="lazy" alt="Monterrey Logo">
+            <h2>Chamber of Commerce</h2>
+            <h4>Rexburg Main Street, Idaho</h4>
+            <h4>contactus@chamber.com</h4>
+            <h4>(208)123-4567</h4>
+
+        </div>
+        <!-- <div class="google-map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1E8qK0WBDaouvZkskttkeqZDQtG0&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+        <div id="dev-info"> -->
+            <hr>
+            <p>&copy; 2023 Chamber of Commerce</p>
+            <p>Dev Karatapu</p>
+            <p>WDD230 Project</p>
+            <div id="lastModified"></div>
+        </div>
     </footer>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/hamMenu.js"></script>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/redirect.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/weather.js"></script>
+
 </body>
+
 </html>
