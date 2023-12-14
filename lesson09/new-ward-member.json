@@ -1,0 +1,28 @@
+{
+    "familyName" : "Dev Karatapu Family",
+    "movedDate" : 2023,
+    "familyMembers" : 3,
+    "bishopricVisit" : true,
+    "members" : [
+        {
+            "name" : "Dave",
+            "gender" : "male",
+            "bithdate" : "07/29"
+        },
+        {
+            "name" : "Neelam",
+            "gender" : "female",
+            "birthdate" : "06/13"
+        },
+        {
+            "name" : "Samaira",
+            "gener" : "female",
+            "birthdate" : "08/05"
+        },
+        {
+            "name" : "Samuel",
+            "gender" : "male",
+            "birthdate" : "in spirit world"
+        }
+    ]
+}
