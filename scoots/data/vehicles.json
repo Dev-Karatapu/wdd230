@@ -1,0 +1,61 @@
+{
+    "vehicles": [
+        {
+            "type": "Vehicle Type",
+            "capacity": "Max Persons",
+            "halfDayReserv": "Reservation - Half Day(3 hrs)",
+            "fullDayReserv": "Reservation - Full Day",
+            "halfDayWalkin": "Walk in - Half Day(3 hrs)",
+            "fullDayWalkin": "Walk in - Full Day"
+        },
+        {
+            "type": "Bird e-Scooter",
+            "capacity": 1,
+            "halfDayReserv": "$20",
+            "fullDayReserv": "$30",
+            "halfDayWalkin": "$30",
+            "fullDayWalkin": "$40"
+        },
+        {
+            "type": "Goat e-Scooter",
+            "capacity": 1,
+            "halfDayReserv": "$20",
+            "fullDayReserv": "$30",
+            "halfDayWalkin": "$30",
+            "fullDayWalkin": "$40"
+        },
+        {
+            "type": "Evercross e-Scooter",
+            "capacity": 1,
+            "halfDayReserv": "$20",
+            "fullDayReserv": "$30",
+            "halfDayWalkin": "$30",
+            "fullDayWalkin": "$40"
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "capacity": 2,
+            "halfDayReserv": "$50",
+            "fullDayReserv": "$120",
+            "halfDayWalkin": "$70",
+            "fullDayWalkin": "$150"
+        },
+        {
+            "type": "Evo m-scooter",
+            "capacity": 2,
+            "halfDayReserv": "$40",
+            "fullDayReserv": "$60",
+            "halfDayWalkin": "$60",
+            "fullDayWalkin": "$100"
+        },
+        {
+            "type": "Uber m-scooter",
+            "capacity": 4,
+            "halfDayReserv": "$40",
+            "fullDayReserv": "$60",
+            "halfDayWalkin": "$60",
+            "fullDayWalkin": "$100"
+        }
+        
+    ]
+}
