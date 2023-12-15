@@ -1,0 +1,65 @@
+[
+    {
+      "name": "Company A",
+      "address": "123 Main Street, City, Country",
+      "phone": "+123456789",
+      "website": "https://www.companya.com",
+      "image": "companya.png",
+      "membershipLevel": "Gold",
+      "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "name": "Company B",
+      "address": "456 Park Avenue, City, Country",
+      "phone": "+987654321",
+      "website": "https://www.companyb.com",
+      "image": "companyb.png",
+      "membershipLevel": "Silver",
+      "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "name": "Company C",
+      "address": "789 Elm Street, City, Country",
+      "phone": "+1122334455",
+      "website": "https://www.companyc.com",
+      "image": "companyc.png",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "name": "Company D",
+      "address": "101 Oak Avenue, City, Country",
+      "phone": "+9988776655",
+      "website": "https://www.companyd.com",
+      "image": "companyd.png",
+      "membershipLevel": "Gold",
+      "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      "name": "Company E",
+      "address": "246 Maple Street, City, Country",
+      "phone": "+1122334455",
+      "website": "https://www.companye.com",
+      "image": "companye.png",
+      "membershipLevel": "Silver",
+      "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "name": "Company F",
+      "address": "135 Pine Road, City, Country",
+      "phone": "+6677889900",
+      "website": "https://www.companyf.com",
+      "image": "companyf.png",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+      "name": "Company G",
+      "address": "789 Cedar Lane, City, Country",
+      "phone": "+1122334455",
+      "website": "https://www.companyg.com",
+      "image": "companyg.png",
+      "membershipLevel": "Gold",
+      "otherInfo": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+    }
+  ]
