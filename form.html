@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms example</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <a id="menu" href="#" title="Home" class="active">Home</a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+            </ul>
+        </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Form Section -->
+    <form action="record.html" method="get">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required><br><br>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required oninput="checkPasswordValidity()"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"><br><br>
+
+      <label for="pageRating">Page Rating:</label>
+      <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="displayRatingValue(this.value)">
+      <span id="ratingValue">1</span><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Dev Karatapu United States</p>
+    <p id="lastModified"></p>
+</footer>
+<script src="scripts/form.js"></script>
+
+</body>
+</html>
